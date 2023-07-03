@@ -9,4 +9,9 @@ export default [
     name: 'pinia',
     component: () => import('@/views/PiniaView.vue'),
   },
+  {
+    path: '/fullScreen',
+    name: 'fullScreen',
+    component: () => import('@/views/FullScreen.vue'),
+  },
 ];

@@ -1,10 +1,3 @@
-<!--
- * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @Date: 2023-07-03 17:22:03
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2023-07-03 17:33:45
- * @Description:
--->
 <script setup>
 import { RouterLink, RouterView } from 'vue-router';
 import HelloWorld from './components/HelloWorld.vue';
@@ -20,11 +13,10 @@ import HelloWorld from './components/HelloWorld.vue';
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/pinia">Pinia</RouterLink>
+        <RouterLink to="/fullScreen">FullScreen</RouterLink>
       </nav>
     </div>
   </header>
-  <dv-loading>Loading...</dv-loading>
-
   <RouterView />
 </template>
 
@@ -64,7 +56,7 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   header {
     display: flex;
     place-items: center;
