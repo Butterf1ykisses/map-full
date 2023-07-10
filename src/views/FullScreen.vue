@@ -1,6 +1,13 @@
+<!--
+ * @Author: likaijie 847094299@qq.com
+ * @Date: 2023-07-04 09:27:18
+ * @LastEditors: likaijie 847094299@qq.com
+ * @LastEditTime: 2023-07-10 16:26:50
+ * @Description:
+-->
 <template>
   <dv-full-screen-container class="fullScreen"
-    ><dv-flyline-chart-enhanced dev :config="config" style="width: 100%; height: 100%"
+    ><dv-flyline-chart-enhanced dev :config="config" class="image-style"
   /></dv-full-screen-container>
 </template>
 
@@ -49,5 +56,14 @@ const config = {
 <style lang="less">
 .fullScreen {
   background-color: black;
+
+  .image-style {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
 }
 </style>
+s
