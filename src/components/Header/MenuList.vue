@@ -51,7 +51,7 @@ const goPath = (item) => {
     overflow: hidden;
     font-size: 30px;
     font-weight: bold;
-    background-image: url("@/assets/images/menuBg.png");
+    background-image: url('@/assets/images/menuBg.png');
   }
 }
 </style>
